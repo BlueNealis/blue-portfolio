@@ -9,6 +9,15 @@
   color: black;
   overflow:hidden;
 }
+.socialBar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 30%;
+  height: 75px; 
+  margin: 5px;
+  background-color: darkgoldenrod;
+}
 
 .buttonTest {
   width: 15vw;
@@ -25,6 +34,7 @@
 }
 
 .welcomeText {
+  font-size: 2.3rem;
   animation-name: slideIntoView;
 animation-duration: 1.2s;
 animation-delay: 1.5s;
