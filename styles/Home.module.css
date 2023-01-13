@@ -3,12 +3,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6rem;
   min-height: 100vh;
-  background-color: #F9B06D;
   color: black;
-  overflow:hidden;
 }
+
+.landingSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F9B06D;
+}
+
 .socialBar {
   position: fixed;
   top: 0px;
@@ -110,6 +118,28 @@ animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
 
+.projectSection {
+  width: 100vw; 
+  height: 100vh;
+  background-color:blanchedalmond;
+}
+
+.technologySection {
+  width: 100vw; 
+  height: 100vh;
+  background-color:cornflowerblue;
+}
+
+.bioSection {
+  width: 100vw; 
+  height: 100vh;
+  background-color:darkgray;
+}
+.contactMeSection {
+  width: 100vw; 
+  height: 100vh;
+  background-color:coral;
+}
 @keyframes slideIntoView {
   0%{transform: translateY(100px);}
   75%{transform: translateY(-5px)}

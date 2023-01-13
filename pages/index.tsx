@@ -21,17 +21,29 @@ export default function Home() {
             <img></img>
           </div>
           <button className={styles.contactButton}>Contact Me!</button>
-            <div className={styles.logoContainer}>
-               <Image className={`${styles.logoImage} ${styles.circleFour}`} height="150" width="150" src="/CircleFour.png" alt="circle"/>
-                <Image className={`${styles.logoImage} ${styles.circleTwo}`} height="200" width="200" src="/CircleTwo.png" alt="circle"/>
-                <Image className={`${styles.logoImage} ${styles.circleOne}`} height="150" width="150" src="/CircleOne.png" alt="circle"/>
-                <Image className={`${styles.logoImage} ${styles.circleThree}`} height="75" width="75" src="/CircleThree.png" alt="circle"/>
-                <Image className={`${styles.logoImage} ${styles.ovalOne}`} height="120" width="170" src="/OvalOne.png" alt="oval"/>
-             </div>
-        <div className={styles.description}>        
-            <div className={styles.container}>
-             <h1 className={styles.welcomeText}> Welcome! I'm Blue Nealis, a software developer</h1>
-            </div> 
+          <div className={styles.landingSection}>
+              <div className={styles.logoContainer}>
+                <Image className={`${styles.logoImage} ${styles.circleFour}`} height="150" width="150" src="/CircleFour.png" alt="circle"/>
+                  <Image className={`${styles.logoImage} ${styles.circleTwo}`} height="200" width="200" src="/CircleTwo.png" alt="circle"/>
+                  <Image className={`${styles.logoImage} ${styles.circleOne}`} height="150" width="150" src="/CircleOne.png" alt="circle"/>
+                  <Image className={`${styles.logoImage} ${styles.circleThree}`} height="75" width="75" src="/CircleThree.png" alt="circle"/>
+                  <Image className={`${styles.logoImage} ${styles.ovalOne}`} height="120" width="170" src="/OvalOne.png" alt="oval"/>
+              </div>    
+              <div className={styles.container}>
+                <h1 className={styles.welcomeText}> Welcome! I'm Blue Nealis, a software developer</h1>
+              </div>
+        </div>
+        <div className={styles.projectSection}>
+
+        </div>
+        <div className={styles.technologySection}> 
+
+        </div>
+        <div className={styles.bioSection}> 
+
+        </div>
+        <div className={styles.contactMeSection}> 
+
         </div>
       </main>
     </>
