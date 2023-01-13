@@ -20,6 +20,7 @@ export default function Home() {
             <img></img>
             <img></img>
           </div>
+          <button className={styles.contactButton}>Contact Me!</button>
             <div className={styles.logoContainer}>
                <Image className={`${styles.logoImage} ${styles.circleFour}`} height="150" width="150" src="/CircleFour.png" alt="circle"/>
                 <Image className={`${styles.logoImage} ${styles.circleTwo}`} height="200" width="200" src="/CircleTwo.png" alt="circle"/>
