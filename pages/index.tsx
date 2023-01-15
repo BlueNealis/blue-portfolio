@@ -37,13 +37,22 @@ export default function Home() {
 
         </div>
         <div className={styles.technologySection}> 
-
+          <h1>Technologies</h1>
+          <h2>Used:</h2>
+          <h2>Learning:</h2>
         </div>
         <div className={styles.bioSection}> 
 
         </div>
         <div className={styles.contactMeSection}> 
-
+          <form>
+            <label>Your Name:</label>
+            <input></input>
+            <label>E-mail:</label>
+            <input></input>
+            <label>Message:</label>
+            <input></input>
+          </form>
         </div>
       </main>
     </>
