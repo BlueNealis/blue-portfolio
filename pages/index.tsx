@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import technologies from '../public/technolgies'
+import  { technologies, learning}  from '../public/technologies'
 import TechnologyImage  from '../components/TechnologyImage'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -46,6 +46,9 @@ export default function Home() {
               return <TechnologyImage source={url} />
             })}
           <h2>Learning:</h2>
+            {learning.map((url) => {
+              return <TechnologyImage source={url} />
+            })}
         </div>
         <div className={styles.bioSection}> 
 
