@@ -36,6 +36,7 @@ export default function Home() {
               <div className={styles.container}>
                 <h1 className={styles.welcomeText}> Welcome! I'm Blue Nealis, a software developer</h1>
               </div>
+              <a>My Work</a> <a>Technologies</a> <a>About Me</a> <a>My Resume</a> <>Get in Touch</>
         </div>
         <div className={styles.projectSection}>
           <h1>Projects</h1>
@@ -64,7 +65,12 @@ export default function Home() {
             })}
         </div>
         <div className={styles.bioSection}> 
-
+            <h1>About Me</h1>
+            <Image src="/../public/miniSelf.png" alt='cartoon self portrait' width={300} height={300}/>
+            <p>Blue is an artist animator turn Software Engineer! 2020 came with many changes and I decided to try out coding after
+              talking to my brother-in-law about the free courses available at Stanford. After practicing on my own through a few classes I knew it was something I loved. 
+              I went forward with a 7 month intensive to further my learning. I love programming, problem solving, and creativity. 
+            </p>
         </div>
         <div className={styles.contactMeSection}> 
           <form>
