@@ -4,6 +4,8 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import  { technologies, learning}  from '../public/technologies'
 import TechnologyImage  from '../components/TechnologyImage'
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,6 +38,17 @@ export default function Home() {
               </div>
         </div>
         <div className={styles.projectSection}>
+          <h1>Projects</h1>
+          <Carousel width={'80%'}>
+          <div>
+            <Image alt='circle' width={300} height={600} src="/../public/CircleFour.png" />
+             <p className="legend">Test</p>
+             </div>
+             <div>
+            <Image alt='circle' width={300} height={600} src="/../public/CircleThree.png" />
+             <p className="legend">Test 2</p>
+             </div>
+          </Carousel>
 
         </div>
         <div className={styles.technologySection}> 
