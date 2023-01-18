@@ -1,0 +1,11 @@
+.icon {
+    margin: 15px; 
+    transition-property: width, height;
+    transition-duration: 0.3s;
+}
+
+.icon:hover {
+    margin: 5px;
+    width: 260px;
+    height: 85px;
+}
