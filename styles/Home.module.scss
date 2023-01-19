@@ -136,6 +136,17 @@ animation-fill-mode: both;
   width: 100vw; 
   height: 100vh;
   background-color:blanchedalmond;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .sectionTitle {
+    margin: 30px;
+  }
+  .carousel {
+    margin-left: 18vw;
+  }
 }
 
 .technologySection {
