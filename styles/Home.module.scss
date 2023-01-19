@@ -5,6 +5,7 @@
   justify-content: center;
   min-height: 100vh;
   color: black;
+  text-align: center;
 }
 
 .landingSection {
@@ -15,6 +16,19 @@
   width: 100vw;
   height: 100vh;
   background-color: #F9B06D;
+
+  .actionBar {
+    display: flex;
+    color: purple;
+
+    .anchor{
+      margin: 5px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
 }
 
 .socialBar {
@@ -128,6 +142,10 @@ animation-fill-mode: both;
   width: 100vw; 
   height: 100vh;
   background-color:cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .bioSection {

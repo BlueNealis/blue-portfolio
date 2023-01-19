@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import  { technologies, learning}  from '../public/technologies'
 import TechnologyImage  from '../components/TechnologyImage'
 import { Carousel } from 'react-responsive-carousel'
@@ -36,9 +37,19 @@ export default function Home() {
               <div className={styles.container}>
                 <h1 className={styles.welcomeText}> Welcome! I'm Blue Nealis, a software developer</h1>
               </div>
-              <a>My Work</a> <a>Technologies</a> <a>About Me</a> <a>My Resume</a> <>Get in Touch</>
+              <div className={styles.actionBar}>
+                <Link href="#projectSection" className={styles.anchor}>My Work</Link>
+        
+                <Link  href="#technologies" className={styles.anchor}>Technologies</Link> 
+              
+                <Link href="#bioSection" className={styles.anchor}>About Me</Link> 
+          
+                <Link href='/resume.pdf' target="_blank" className={styles.anchor}>My Resume</Link> 
+      
+                <Link href="#contactSection" className={styles.anchor}>Get in Touch</Link>
+              </div>
         </div>
-        <div className={styles.projectSection}>
+        <div id="projectSection" className={styles.projectSection}>
           <h1>Projects</h1>
           <Carousel width={'80%'}>
           <div>
@@ -52,19 +63,20 @@ export default function Home() {
           </Carousel>
 
         </div>
-        <div className={styles.technologySection}> 
+        <div id="technologies" className={styles.technologySection}> 
           <h1>Technologies</h1>
-
-          <h2>Used:</h2>
-            {technologies.map((url) => {
-              return <TechnologyImage source={url} />
-            })}
+          <div className={styles.technologyBlock}>
+            <h2>Used:</h2>
+              {technologies.map((url) => {
+                return <TechnologyImage source={url} />
+              })}
+              </div>
           <h2>Learning:</h2>
             {learning.map((url) => {
               return <TechnologyImage source={url} />
             })}
         </div>
-        <div className={styles.bioSection}> 
+        <div id="bioSection" className={styles.bioSection}> 
             <h1>About Me</h1>
             <Image src="/../public/miniSelf.png" alt='cartoon self portrait' width={300} height={300}/>
             <p>Blue is an artist animator turn Software Engineer! 2020 came with many changes and I decided to try out coding after
@@ -72,7 +84,7 @@ export default function Home() {
               I went forward with a 7 month intensive to further my learning. I love programming, problem solving, and creativity. 
             </p>
         </div>
-        <div className={styles.contactMeSection}> 
+        <div id="contactSection" className={styles.contactMeSection}> 
           <form>
             <label>Your Name:</label>
             <input></input>
