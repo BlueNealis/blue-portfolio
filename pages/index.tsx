@@ -22,8 +22,10 @@ export default function Home() {
             <img></img>
             <img></img>
           </div>
+          <Link href="#landing" className={styles.home}>
+            <h1>Home</h1></Link>
           <button className={styles.contactButton}>Contact Me!</button>
-          <div className={styles.landingSection}>
+          <div id="landing" className={styles.landingSection}>
               <div className={styles.logoContainer}>
                 <Image className={`${styles.logoImage} ${styles.circleFour}`} height="150" width="150" src="/CircleFour.png" alt="circle"/>
                   <Image className={`${styles.logoImage} ${styles.circleTwo}`} height="200" width="200" src="/CircleTwo.png" alt="circle"/>
