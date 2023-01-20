@@ -144,9 +144,15 @@ animation-fill-mode: both;
   .sectionTitle {
     margin: 30px;
   }
+
   .carousel {
-    margin-left: 18vw;
+    margin-top: 5vh; 
   }
+
+  .projectCard {
+    display:flex;
+  }
+
 }
 
 .technologySection {
@@ -169,6 +175,20 @@ animation-fill-mode: both;
   width: 100vw; 
   height: 100vh;
   background-color:coral;
+
+  form {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      border: none;
+      background-color: white;
+      width: 40vw;
+    }
+  }
 }
 
 @keyframes slideIntoView {

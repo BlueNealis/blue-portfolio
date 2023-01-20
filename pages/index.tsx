@@ -5,9 +5,6 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.scss'
 import  { technologies, learning}  from '../public/technologies'
 import TechnologyImage  from '../components/TechnologyImage'
-import { Carousel } from 'react-responsive-carousel'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -50,21 +47,8 @@ export default function Home() {
               </div>
         </div>
         <div id="projectSection" className={styles.projectSection}>
-          <h1 clasName={styles.sectionTitle}>Projects</h1>
-          <Carousel className={styles.carousel} width={'80%'} useKeyboardArrows={true}>
-          <div>
-            <Image alt='What Drink Should I Order Image' width={800} height={600} src="/../public/project-images/WhatDrinkLanding.png" />
-             <p className="legend">What Drink Should I Order?</p>
-             </div>
-             <div>
-            <Image alt='Birds of A Feather Modal' width={800} height={600} src="/../public/project-images/BoAF.png" />
-             <p className="legend">Birds of A Feather</p>
-             </div>
-             <div>
-            <Image alt='discoverd image' width={800} height={700} src="/../public/project-images/discoverd.png" />
-             <p className="legend">Discoverd</p>
-             </div>
-          </Carousel>
+          <h1 className={styles.sectionTitle}>Projects</h1>
+    
 
         </div>
         <div id="technologies" className={styles.technologySection}> 
