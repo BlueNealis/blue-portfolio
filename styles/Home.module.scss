@@ -191,6 +191,21 @@ animation-fill-mode: both;
   width: 100vw; 
   height: 100vh;
   background-color:darkgray;
+  display: flex;
+  flex-direction: column;
+
+  .bioIntro {
+    display: flex;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin-left: 10vw;
+      width: 40%;
+      text-align: justify;
+    }
+  }
 }
 
 .contactMeSection {

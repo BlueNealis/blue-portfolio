@@ -72,11 +72,14 @@ export default function Home() {
         </div>
         <div id="bioSection" className={styles.bioSection}> 
             <h1>About Me</h1>
-            <Image src="/../public/miniSelf.png" alt='cartoon self portrait' width={300} height={300}/>
-            <p>Blue is an artist animator turn Software Engineer! 2020 came with many changes and I decided to try out coding after
-              talking to my brother-in-law about the free courses available at Stanford. After practicing on my own through a few classes I knew it was something I loved. 
-              I went forward with a 7 month intensive to further my learning. I love programming, problem solving, and creativity. 
-            </p>
+            <div className={styles.bioIntro}> 
+              <Image src="/../public/miniSelf.png" alt='cartoon self portrait' width={300} height={300}/>
+              <p>Blue is an artist animator turn Software Engineer! 2020 came with many changes and I decided to try out coding after
+                talking to my brother-in-law about the free courses available at Stanford. After practicing on my own through a few classes I knew it was something I loved. 
+                I went forward with a 7 month intensive to further my learning. I love programming, problem solving, and creativity. 
+              </p>
+            </div>
+           
         </div>
         <div id="contactSection" className={styles.contactMeSection}> 
           <form>
