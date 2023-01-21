@@ -1,11 +1,10 @@
-import React, { useEffect } from "react"
-import { useState, useEffect } from "react"
+import React from "react"
 import Image from "next/image"
 import styles from "./Project.module.scss"
 
 const Project = ({title, technologies, img, deployed, features}) => {
     return(
-        <div>
+        <div className={styles.project}>
             <h1>{title}</h1>
             <Image alt={title} src={img} width={"60vw"} height={"45vh"}/>
             <p>{`${title} is built using ${technologies.map((tech) =>{ return `${tech}, `})}.`}</p>
