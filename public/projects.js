@@ -21,10 +21,11 @@ const projects = [{
     "Cypress used for e2e testing to ensure user experience is as expected"]
 },{
     title: "Discoverd", 
-    img:"", 
+    img:"/../public/project-images/discoverd.png", 
     deployed:"",
-    technologies:[], 
-    features:[]
+    technologies:['React', 'React Native', 'Expo', 'Cypress'], 
+    features:['User can upload images from phone of plants for identification suggestions',
+        'User can click on link to learn about possible plant identification', ]
 },{
     title: "Tea Journal", 
     img:"", 
