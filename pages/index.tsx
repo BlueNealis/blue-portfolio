@@ -19,12 +19,12 @@ export default function Home() {
       <main className={styles.main}>
           <div className={styles.socialBar}>
             <Link target="_blank" href="https://github.com/BlueNealis">
-              <Image className={styles.socialIcon} alt="github social" width={50} height={50} src="/../public/github.png"/>
+              <Icon type="social" alt="github social" width={50} height={50} source="/../public/github.png"/>
             </Link>
             <Link target="_blank" href="https://www.linkedin.com/in/blue-nealis/">
-              <Image className={styles.socialIcon} alt="linkedin social"  width={50} height={50} src="/../public/linkedin.png"/>
+              <Icon type="social" alt="linkedin social"  width={50} height={50} source="/../public/linkedin.png"/>
             </Link>
-            <Image className={styles.socialIcon} alt="art website"  width={50} height={50} src="/../public/art-gallery.png"/>
+            <Icon type="social" alt="art website"  width={50} height={50} source="/../public/art-gallery.png"/>
           </div>
           <Link href="#landing" className={styles.home}>
             <h1>Home</h1></Link>
@@ -62,12 +62,12 @@ export default function Home() {
           <div className={styles.technologyBlock}>
             <h2>Used:</h2>
               {technologies.map((url) => {
-                return <Icon source={url} width={250} height={75} alt={'technology icon'} />
+                return <Icon type="tech" source={url} width={250} height={75} alt={'technology icon'} />
               })}
               </div>
           <h2>Learning:</h2>
             {learning.map((url) => {
-              return <Icon source={url} width={250} height={75} alt={'technology icon'}/>
+              return <Icon  type="tech" source={url} width={250} height={75} alt={'technology icon'}/>
             })}
         </div>
         <div id="bioSection" className={styles.bioSection}> 
