@@ -19,7 +19,7 @@ export default function Home() {
       <main className={styles.main}>
           <div className={styles.socialBar}>
             <Link target="_blank" href="https://github.com/BlueNealis">
-              <Icon className={styles.socialIcon} alt="github social" width={50} height={50} source="/../public/github.png"/>
+              <Image className={styles.socialIcon} alt="github social" width={50} height={50} src="/../public/github.png"/>
             </Link>
             <Link target="_blank" href="https://www.linkedin.com/in/blue-nealis/">
               <Image className={styles.socialIcon} alt="linkedin social"  width={50} height={50} src="/../public/linkedin.png"/>

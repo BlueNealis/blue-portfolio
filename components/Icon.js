@@ -1,10 +1,17 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import styles from "./Icon.module.css"
+import { setHttpClientAndAgentOptions } from "next/dist/server/config"
 
 const Icon = ({source, alt, width, height, type}) => {
+    const styleClass, setClass = useState({})
+    useEffect(() => {
+        type === "social" ? setClass(styles.socialIcon) : setClass(styles.techIcon)
+    }, [])
+    
     return(
-    <Image className={styles.icon} src={source} alt={alt} width={width} height={height}></Image>
+    <Image className={styleClass} src={source} alt={alt} width={width} height={height}></Image>
         )
 }
 
