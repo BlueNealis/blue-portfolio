@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.scss'
 import  { technologies, learning}  from '../public/technologies'
-import TechnologyImage  from '../components/TechnologyImage'
+import Icon  from '../components/Icon'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <main className={styles.main}>
           <div className={styles.socialBar}>
             <Link target="_blank" href="https://github.com/BlueNealis">
-              <Image className={styles.socialIcon} alt="github social" width={50} height={50} src="/../public/github.png"/>
+              <Icon className={styles.socialIcon} alt="github social" width={50} height={50} source="/../public/github.png"/>
             </Link>
             <Link target="_blank" href="https://www.linkedin.com/in/blue-nealis/">
               <Image className={styles.socialIcon} alt="linkedin social"  width={50} height={50} src="/../public/linkedin.png"/>
@@ -62,12 +62,12 @@ export default function Home() {
           <div className={styles.technologyBlock}>
             <h2>Used:</h2>
               {technologies.map((url) => {
-                return <TechnologyImage source={url} />
+                return <Icon source={url} width={250} height={75} alt={'technology icon'} />
               })}
               </div>
           <h2>Learning:</h2>
             {learning.map((url) => {
-              return <TechnologyImage source={url} />
+              return <Icon source={url} width={250} height={75} alt={'technology icon'}/>
             })}
         </div>
         <div id="bioSection" className={styles.bioSection}> 
@@ -78,8 +78,11 @@ export default function Home() {
                 talking to my brother-in-law about the free courses available at Stanford. After practicing on my own through a few classes I knew it was something I loved. 
                 I went forward with a 7 month intensive to further my learning. I love programming, problem solving, and creativity. 
               </p>
+             
             </div>
-           
+              <div className={styles.favoriteColors}>
+                <h2>My Favorite Colors</h2>
+              </div>
         </div>
         <div id="contactSection" className={styles.contactMeSection}> 
           <form>
