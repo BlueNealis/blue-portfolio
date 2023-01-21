@@ -35,10 +35,22 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 30%;
-  height: 75px; 
+  width: 15vw;
+  height: 60px; 
   margin: 5px;
-  background-color: darkgoldenrod;
+  background-color: rgb(235,231,216,.6);
+  display: flex; 
+  justify-content: center;
+  align-content: center;
+  .socialIcon {
+    margin: 5px;
+
+    &:hover {
+      cursor:pointer;
+    }
+
+  }
+
 }
 
 .contactButton {
