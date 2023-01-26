@@ -24,7 +24,6 @@ export default function Home() {
             <Link target="_blank" href="https://www.linkedin.com/in/blue-nealis/">
               <Icon type="social" alt="linkedin social"  width={50} height={50} source="/../public/linkedin.png"/>
             </Link>
-            <Icon type="social" alt="art website"  width={50} height={50} source="/../public/art-gallery.png"/>
           </div>
           <Link href="#landing" className={styles.home}>
             <h1>Home</h1></Link>
@@ -58,7 +57,7 @@ export default function Home() {
 
         </div>
         <div id="technologies" className={styles.technologySection}> 
-          <h1>Technologies</h1>
+          <h1 className={styles.sectionTitle}>Technologies</h1>
           <div className={styles.technologyBlock}>
             <h2>Used:</h2>
               {technologies.map((url) => {
@@ -71,7 +70,7 @@ export default function Home() {
             })}
         </div>
         <div id="bioSection" className={styles.bioSection}> 
-            <h1>About Me</h1>
+            <h1 className={styles.sectionTitle}>About Me</h1>
             <div className={styles.bioIntro}> 
               <Image src="/../public/miniSelf.png" alt='cartoon self portrait' width={300} height={300}/>
               <p>Blue is an artist animator turn Software Engineer! 2020 came with many changes and I decided to try out coding after
