@@ -1,3 +1,5 @@
+@use "./vars.scss";
+
 .main {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,8 @@
   min-height: 100vh;
   color: black;
   text-align: center;
+  background-color: vars.$orange;
+  background-size: cover;
 }
 
 .landingSection {
@@ -15,8 +19,6 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: #F9B06D;
-
   .actionBar {
     display: flex;
     color: purple;
@@ -28,7 +30,6 @@
       }
     }
   }
-
 }
 
 .socialBar {
@@ -151,7 +152,6 @@ animation-fill-mode: both;
 .projectSection {
   width: 100vw; 
   height: 100vh;
-  background-color:blanchedalmond;
   display: flex; 
   flex-direction: column;
   justify-content: center;
@@ -174,7 +174,6 @@ animation-fill-mode: both;
 .technologySection {
   width: 100vw; 
   height: 100vh;
-  background-color:cornflowerblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,7 +183,6 @@ animation-fill-mode: both;
 .bioSection {
   width: 100vw; 
   height: 100vh;
-  background-color:darkgray;
   display: flex;
   flex-direction: column;
 
@@ -205,7 +203,6 @@ animation-fill-mode: both;
 .contactMeSection {
   width: 100vw; 
   height: 100vh;
-  background-color:coral;
 
   form {
     height: 80%;
